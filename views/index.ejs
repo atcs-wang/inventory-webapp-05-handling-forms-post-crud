@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stuff Inventory</title>
+    <title>Homework Manager</title>
 
     <!-- Materialize CSS and Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -15,17 +15,39 @@
 </head>
 
 <body>
+    <!-- Nav bar -->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo"><i class="material-icons left">school</i>Homework Manager</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="desktop-nav" class="right hide-on-med-and-down">
+                    <li><a href="/"><i class="material-icons left">home</i> Home</a></li>
+                    <li><a href="/assignments"><i class="material-icons left">list</i> Assignments</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="mobile-nav" class="sidenav">
+            <li><a href="/"><i class="material-icons left">home</i> Home</a></li>
+            <li><a href="/assignments"><i class="material-icons left">list</i> Assignments</a></li>
+        </ul>
+    </header>
 
     <!-- Actual page content! -->
     <div class="container">
         <h1>Welcome!</h1>
         <img src="/images/clutter-clipart.jpg">
-        <h2>Let's manage your stuff together.</h2>
-        <a class="btn" href="/stuff">
-            <i class="material-icons right">arrow_forward</i>
-            Get started!
-        </a>
+        <h2>Let's manage your homework together.</h1>
+            <a class="btn" href="/assignments">
+                <i class="material-icons right">arrow_forward</i> Get started!
+            </a>
     </div>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Auto-initialize Materialize elements (Note - more specific initialization may be required for certain elements)-->
+    <script src="/scripts/materializeAutoInit.js"></script>
 
 </body>
 

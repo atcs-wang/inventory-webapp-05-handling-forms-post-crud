@@ -1,26 +1,35 @@
 {
   "name": "inventory-webapp",
   "version": "1.0.0",
-  "description": "This tutorial follows after:\r [Part 01: Protyping our web pages](https://github.com/atcs-wang/inventory-webapp-01-static-prototypes)",
+  "description": "A simple homework management webapp",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "devstart": "nodemon -e js,ejs,sql,env app.js",
+    "dbcreate": "node db/db_create.js",
+    "dbsample": "node db/db_insert_sample_data.js",
+    "dbprint": "node db/db_print.js",
+    "devstart-fresh": "npm-run-all dbcreate dbsample dbprint devstart"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atcs-wang/inventory-webapp-02-app-server-basics.git"
+    "url": "git+https://github.com/atcs-wang/inventory-webapp-05-handling-forms-post-crud.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/atcs-wang/inventory-webapp-02-app-server-basics/issues"
+    "url": "https://github.com/atcs-wang/inventory-webapp-05-handling-forms-post-crud/issues"
   },
-  "homepage": "https://github.com/atcs-wang/inventory-webapp-02-app-server-basics#readme",
+  "homepage": "https://github.com/atcs-wang/inventory-webapp-05-handling-forms-post-crud#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
-    "ejs": "^3.1.6",
-    "express": "^4.17.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
     "morgan": "^1.10.0",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
