@@ -47,8 +47,8 @@ app.get( "/assignments", ( req, res ) => {
             res.render('assignments', data);
             // What's passed to the rendered view: 
             //  hwlist: [
-            //     {  id: __ , title: __ , priority: __ , subjectName: __ , subjectId: __ ,  dueDateFormatted: __ },
-            //     {  id: __ , title: __ , priority: __ , subjectName: __ , subjectId: __ ,   dueDateFormatted: __ },
+            //     { assignmentId: __ , title: __ , priority: __ , subjectName: __ , subjectId: __ ,  dueDateFormatted: __ },
+            //     { assignmentId: __ , title: __ , priority: __ , subjectName: __ , subjectId: __ ,   dueDateFormatted: __ },
             //     ...
             //  ]
             
@@ -82,7 +82,7 @@ app.get( "/assignments/:id", ( req, res ) => {
             let data = {hw: results[0]}; // results is still an array, get first (only) element
             res.render('detail', data); 
             // What's passed to the rendered view: 
-            //  hw: { id: ___ , title: ___ , priority: ___ , 
+            //  hw: {assignmentId: ___ , title: ___ , priority: ___ , 
             //    subjectName: ___ , subjectId: ___, 
             //    dueDateExtended: ___ , dueDateYMD: ___ , description: ___ 
             //  }
