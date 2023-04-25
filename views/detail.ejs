@@ -83,7 +83,7 @@
                 <form id="updateForm" method="post" action="/assignments/<%= hw.assignmentId %>"> <!-- default action is the page's URL -->
                     <div class="row">
                         <div class="input-field col s8">
-                            <input type="text" id="titleInput" name="title" class="validate" data-length="32" required value=<%= hw.title %>>
+                            <input type="text" id="titleInput" name="title" class="validate" data-length="32" required value="<%= hw.title %>">
                             <label for="titleInput">Assignment title:</label>
                         </div>
                         <div class="input-field col s4">
@@ -105,7 +105,7 @@
                         </div>
     
                         <div class="input-field col s6">
-                            <input type="date" id="dueDateInput" name="dueDate" value=<%= hw.dueDateYMD %>>  <!-- Note that the date value format is "yyyy-mm-dd" -->
+                            <input type="date" id="dueDateInput" name="dueDate" value="<%= hw.dueDateYMD %>">  <!-- Note that the date value format is "yyyy-mm-dd" -->
                             <label for="dueDateInput">Due Date:</label>
                         </div>
 
