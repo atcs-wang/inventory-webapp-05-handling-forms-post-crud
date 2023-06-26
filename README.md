@@ -609,7 +609,9 @@ Navigate to `/assignments/:id` for some existing assignment, fill out the form i
 
 With all the basic CRUD routes for assignments implemented , we have a somewhat usable web-app! Users can create, read, update, and delete data that is persistently maintained in a database.
 
-However, that data is shared between *all* users. For the web app to be truly usable, we want to have each assignment associated with individual users, accessible only to those who originally created them. Ultimately, we need our app protected behind a login process. Check out the next tutorial: [Part 06: Authentication and Authorization](https://github.com/atcs-wang/inventory-webapp-06-auth) 
+However, that data is shared between *all* users. For the web app to be truly usable, we want to have each assignment associated with individual users, accessible only to those who originally created them. Ultimately, we need our app protected behind a login process. Check out the next tutorial: [Part 06a: Authentication and Authorization](https://github.com/atcs-wang/inventory-webapp-06-auth) 
+
+Although auth is necessary, you *could* deploy your app in its current state, just to see it on the web. You can jump ahead to that tutorial first, if you wish: [Part 06b: First Deployment](https://github.com/atcs-wang/inventory-webapp-06-first-deployment)
 
 
 
