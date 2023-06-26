@@ -607,9 +607,9 @@ Navigate to `/assignments/:id` for some existing assignment, fill out the form i
 
 ## (5.6) What's next?
 
-With all the basic CRUD routes implemented, we have a usable web-app! It is - *almost* - time to deploy a first version of our application to a cloud-hosting service. 
+With all the basic CRUD routes for assignments implemented , we have a somewhat usable web-app! Users can create, read, update, and delete data that is persistently maintained in a database.
 
-However, there are a smattering of changes we need to make before we put it online. In the next tutorial [https://github.com/bca-atcs/inventory-webapp-06a-predeployment-improvements](https://github.com/bca-atcs/inventory-webapp-06a-predeployment-improvements), we will implement and discuss these preparations.
+However, that data is shared between *all* users. For the web app to be truly usable, we want to have each assignment associated with individual users, accessible only to those who originally created them. Ultimately, we need our app protected behind a login process. Check out the next tutorial: [Part 06: Authentication and Authorization](https://github.com/atcs-wang/inventory-webapp-06-auth) 
 
 
 
